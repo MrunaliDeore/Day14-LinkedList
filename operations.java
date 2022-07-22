@@ -50,19 +50,5 @@ public class operations {
 		linkedList.print();
 	}
 
-	public static void deleteAtLast() {
-		System.out.println("------------------------------------------------------------");
-		System.out.println("Ability to delete the last element in the LinkedList of sequence 56->30->70 - UC6");
-		linkedList linkedList = new linkedList();		
-		linkedList.push(70);
-		linkedList.push(30);
-		linkedList.push(56);		
-		System.out.println("Original LinkedList:");
-		linkedList.print();
-		node poplast = linkedList.poplast();
-		System.out.println("After removing last Elememnt:");
-		linkedList.print();
-
-	}
-
+	
 }

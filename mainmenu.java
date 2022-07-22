@@ -10,9 +10,7 @@ public class mainmenu {
 		System.out.println("2. Add at the end");
 		System.out.println("3. Add at the between");
 		System.out.println("4. Delete first element");
-		System.out.println("5. Delete last element");
 		
-	
 		switch(scanner.nextInt()){
 		case 1 : operations.addDataAtTheStart();
 		break;
@@ -24,9 +22,6 @@ public class mainmenu {
 		break;
 		
 		case 4 : operations.deleteAtFirst();
-		break;
-		
-		case 5 : operations.deleteAtLast();
 		break;
 		
 		}

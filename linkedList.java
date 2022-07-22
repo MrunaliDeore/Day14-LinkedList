@@ -54,19 +54,5 @@ public class linkedList {
 		return tempNode;
 	}
 
-	public node poplast(){		
-		if(head == null) {
-			System.out.println("List is empty");
-		}		
-		node lastNode = head;
-		node previousToLastNode = null;
-		while(lastNode.next != null) {
-			previousToLastNode = lastNode;
-			lastNode = lastNode.next;
-		}
-		previousToLastNode.next = null;
-		return lastNode;
-	}
-
 	
 }
