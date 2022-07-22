@@ -101,18 +101,5 @@ public class operations {
 		linkedList.print();
 	}
 
-	public static void ascendingOrder() {
-		linkedList linkedList = new linkedList();	
-		node newNode;
-		newNode = linkedList.newNode(70);
-		linkedList.sortedInsert(newNode);
-		newNode = linkedList.newNode(30);
-		linkedList.sortedInsert(newNode);
-		newNode = linkedList.newNode(40);
-		linkedList.sortedInsert(newNode);
-		newNode = linkedList.newNode(56);
-		linkedList.sortedInsert(newNode);	
-		System.out.println("Created Linked List");
-		linkedList.print();
-	}
+	
 }

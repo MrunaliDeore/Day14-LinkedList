@@ -13,7 +13,7 @@ public class mainmenu {
 		System.out.println("5. Delete last element");
 		System.out.println("6. Insert at the position");
 		System.out.println("7. Delete at the middle");
-		System.out.println("8. Ascending Order");
+		
 		
 	
 		switch(scanner.nextInt()){
@@ -38,8 +38,7 @@ public class mainmenu {
 		case 7 : operations.deleteAtMiddle();
 		break;
 		
-		case 8 : operations.ascendingOrder();
-		break;
+	
 		}
 	}
 }

@@ -127,31 +127,5 @@ public class linkedList {
 		return count;
 	}
 	
-	public void sortedInsert(node newNode)
-    {
-        node current;
-  
-        /* Special case for head node */
-        if (head == null || head.data >= newNode.data) {
-        	newNode.next = head;
-            head = newNode;
-        }
-        else {
-  
-            /* Locate the node before point of insertion. */
-            current = head;
-  
-            while (current.next != null && current.next.data < newNode.data)
-                current = current.next;
-  
-            newNode.next = current.next;
-            current.next = newNode;
-        }
-    }
 	
-	public node newNode(int data)
-    {
-        node x = new node(data);
-        return x;
-    }
 }
