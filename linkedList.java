@@ -68,29 +68,5 @@ public class linkedList {
 		return lastNode;
 	}
 
-	public void insertAtPosition(int nodeValue,int position) {
-		if(position<0) {
-			System.out.println("Invalid Value of position ="+position);
-		}
-		node newNode = new node(nodeValue);
-		if(position == 0) {
-			newNode.next = head;
-			head = newNode;
-			return;
-		}
-		node currentNode = head;
-		for (int i = 0; i < position-2; i++) {
-			currentNode = currentNode.next;
-
-			if(currentNode == null) {
-				System.out.println("Valus of position ="+position+" is greater than number of nodes in the list!!");
-			}
-		}		
-		newNode.next = currentNode.next;
-		currentNode.next = newNode;
-	}
-
-
-	
 	
 }

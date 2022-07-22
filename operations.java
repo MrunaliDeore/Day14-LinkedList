@@ -65,21 +65,4 @@ public class operations {
 
 	}
 
-	public static void insertAtPosition() {
-		System.out.println("------------------------------------------------------------");
-		System.out.println("Ability to insert 40 after 30 to the Linked List sequence of 56->30->70 - UC8");
-		linkedList linkedList = new linkedList();		
-		linkedList.push(70);
-		linkedList.push(30);
-		linkedList.push(56);		
-		System.out.println("Original LinkedList:");
-		linkedList.print();
-		int position = 2;
-		int nodeValue = 40;
-		System.out.println("Adding a Node with Value:"+nodeValue+" at position:"+position);
-		linkedList.insertAtPosition(nodeValue, position);
-		linkedList.print();
-	}
-
-	
 }
