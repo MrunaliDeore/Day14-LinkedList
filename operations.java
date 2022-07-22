@@ -81,25 +81,5 @@ public class operations {
 		linkedList.print();
 	}
 
-	public static void deleteAtMiddle() {
-		System.out.println("------------------------------------------------------------");
-		System.out.println("Ability to delete 40 from the Linked List sequence of 56->30->40->70 and show the size of LinkedList is 3 - UC9");
-		linkedList linkedList = new linkedList();		
-		linkedList.push(70);
-		linkedList.push(30);
-		linkedList.push(56);		
-		System.out.println("Original LinkedList:");
-		linkedList.print();
-		int position = 2;
-		int nodeValue = 40;
-		System.out.println("Adding a Node with Value:"+nodeValue+" at position:"+position);
-		linkedList.insertAtPosition(nodeValue, position);
-		linkedList.print();
-
-		System.out.println("Delete a Node with Value:"+nodeValue+" at position:"+position);
-		linkedList.deleteMid();
-		linkedList.print();
-	}
-
 	
 }

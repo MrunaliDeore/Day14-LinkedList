@@ -12,9 +12,6 @@ public class mainmenu {
 		System.out.println("4. Delete first element");
 		System.out.println("5. Delete last element");
 		System.out.println("6. Insert at the position");
-		System.out.println("7. Delete at the middle");
-		
-		
 	
 		switch(scanner.nextInt()){
 		case 1 : operations.addDataAtTheStart();
@@ -35,10 +32,7 @@ public class mainmenu {
 		case 6 : operations.insertAtPosition();
 		break;
 		
-		case 7 : operations.deleteAtMiddle();
-		break;
 		
-	
 		}
 	}
 }

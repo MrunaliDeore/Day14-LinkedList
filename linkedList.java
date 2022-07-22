@@ -90,42 +90,7 @@ public class linkedList {
 		currentNode.next = newNode;
 	}
 
-	public node deleteMid()
-	{
-		// Base cases
-		if (head == null)
-			return null;
-		if (head.next == null) {
-			return null;
-		}
-		node copyHead = head;
 
-		// Find the count of nodes
-		int count = countOfNodes(head);
-
-		// Find the middle node
-		int mid = count / 3;
-
-		// Delete the middle node
-		while (mid-- > 1) {
-			head = head.next;
-		}
-
-		// Delete the middle node
-		head.next = head.next.next;
-
-		return copyHead;
-	}
-
-	public int countOfNodes(node head)
-	{
-		int count = 0;
-		while (head != null) {
-			head = head.next;
-			count++;
-		}
-		return count;
-	}
 	
 	
 }
